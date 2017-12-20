@@ -1,0 +1,435 @@
+﻿#all_block {
+	width: 1100px;
+	height: auto;
+	margin-top: 20px;
+}
+.block_and_text {
+	width: 240px;
+	height: 220px;
+	float: left;
+	display: block;
+	margin: 17.5px;
+}
+.block1, .block2, .block3, .block4 {
+	width: 240px;
+	height: 175px;
+	background: #f3f3f3 url('images/scal.png') no-repeat scroll center center;
+}
+.block1:hover, .block2:hover, .block3:hover, .block4:hover {
+	background-image: url('images/scal hover.png');
+	background-color: #1a3a54;
+}
+.text1, .text2, .text3, .text4 {
+	height: 45px;
+	width: 100%;
+	background-color: #f0f0f0;
+	text-align: center;
+	line-height: 45px;
+	font-family: "AvantGarde LT Medium";
+	font-size: 16px;
+	color: #1a3a54;
+}
+.block_and_text:hover {
+	color: #fff;
+	background-color: #1a3a54;
+}
+#top_slide {
+	width: 100%;
+	height: 450px;
+	background-color: #d5515f;
+}
+#sub_slide_why {
+	width: 100%;
+	height: 280px;
+	background-color: #d5515f;
+	background: transparent url('images/bg_why_us.jpg') no-repeat scroll center center / cover;
+}
+#nav {
+	width: 100%;
+	height: 80px;
+	background-color: #f3f3f3;
+}
+#logo {
+	width: 265px;
+	height: 70px;
+	float: left;
+	margin: 8px 0px 0px 50px;
+}
+
+#nav_en {
+	height: 100%;
+	float: right;
+	margin: 0px 50px 0px 0px;
+}
+#nav_en ul {
+	list-style-type: none;
+	margin: 0;
+	float: left;
+	height: 100%;
+	width: 100%;
+}
+#nav_en ul li {
+	float: right;
+}
+#nav_en ul li a {
+	font-size: 16px;
+	font-family: "AvantGarde CE", Courier, monospace;
+	font-weight: bold;
+	color: #d5515f;
+	text-align: center;
+	line-height: 80px;
+	margin: 0px 15px;
+	width: 100%;
+	height: 100%;
+}
+#nav_en ul li a:hover {
+	color: #1a3a54;
+}
+#product_blocks {
+	width: 100%;
+	background-color: #fff;
+}
+#who_we_are_message {
+	width: 100%;
+	height: 383px;
+	background: #d5515f url('images/alsafty_who_we_are.jpg') no-repeat scroll center center;
+	position: relative;
+	visibility: inherit;
+	background-size: cover;
+	margin-top: 30px;
+}
+#our_product_block {
+	width: 100%;
+	height: 470px;
+	background-color: #fff;
+}
+#left {
+	width: 37%;
+	height: 100%;
+	float: left;
+	background: #fff url('images/our_product_scale.jpg') no-repeat scroll center center;
+	margin: 0px 0px 0px 78px;
+}
+#right {
+	width: 56%;
+	height: 100%;
+	float: right;
+}
+#last_news {
+	width: 100%;
+	background-color: #f3f3f3;
+	display:table;
+	padding-bottom:20px;
+}
+#call_us {
+	width: 100%;
+	height: 108px;
+	background: #202020 url('images/call_us.jpg') no-repeat scroll center center;
+	background-size: cover;
+}
+#text{
+	width:100%;
+	line-height:35px;
+	padding-top:17px;	
+	direction:rtl;
+	text-align:center;
+	color:#fff;
+	font-size:12px;
+	font-family: "DIN Next LT W23";
+}
+#footer {
+	width: 100%;
+	height: 100px;
+	background-color: #14232f;
+}
+
+
+
+* {
+	margin: 0px auto;
+	padding: 0px;
+}
+body {
+	background-color: #fff;
+	line-height: 30px;
+	color: #5c5c5c;
+	font: "JF Flat Regular",Tahoma,Verdana;
+}
+img {
+	border: 0px;
+}
+a {
+	text-decoration: none;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #5c5c5c;
+	font-weight: normal;
+}
+#container {
+	width: 100%;
+}
+.center {
+	width: 1200px;
+	height: 100%;
+}
+#news_right {
+	width: 345px;
+	float: right;
+	margin: 10px 200px 0px 30px;
+}
+#news_left {
+	width: 345px;
+	float: left;
+	margin: 10px 30px 0px 200px;
+}
+.goto {
+	width: 155px;
+	display: table;
+	height: 33px;
+	float: left;
+	background-color: #1a3a54;
+	color: #fff;
+	margin: 20px 300px 0px 78px;
+	padding-top: 10px;
+	text-align: center;
+	font: normal normal normal 16px "AvantGarde LT Medium";
+}
+.goto:hover {
+	background-color: #d5515f;
+	border: #fff 1px solid;
+}
+.goto2 {
+	width: 155px;
+	height: 33px;
+	float: right;
+	background-color: #d5515f;
+	color: #fff;
+	margin: 35px 130px 0px 20px;
+	padding-top: 10px;
+	text-align: center;
+	font: normal normal normal 16px "AvantGarde LT Medium";
+}
+.goto2:hover {
+	background-color: #14232f;
+	border: #fff 1px solid;
+}
+h5 {
+	text-align: left;
+	width: 590px;
+	height: 150px;
+	float: left;
+	color: #fff;
+	font-family: "AvantGarde LT Medium";
+	margin: 15px 0px 0px 78px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+}
+h6 {
+	text-align: left;
+	width: 590px;
+	float: right;
+	color: #242424;
+	font-family: "AvantGarde LT Medium";
+	margin: 15px 0px 20px 78px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+}
+span3 {
+	text-align: left;
+	float: left;
+	color: #242424;
+	font-family: "AvantGarde LT Medium";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	width: 345px;
+	margin: 10px 0px;
+}
+h1 {
+	width: 100%;
+	height: 30px;
+	margin: 50px 0px 0px 0px;
+	float: left;
+	text-align: center;
+	color: #d5515f;
+	font-size: 24px;
+	font-weight: normal;
+}
+h2 {
+	width: 56%;
+	height: 30px;
+	margin: 41px 0px 0px 78px;
+	float: left;
+	text-align: left;
+	color: #fff;
+	font-family: "AvantGarde LT Medium";
+	font-size: 22px;
+	font-weight: normal;
+}
+h3 {
+	width: 100%;
+	height: 30px;
+	margin: 30px 0px 0px 78px;
+	float: left;
+	text-align: left;
+	color: #d5515f;
+	font-family: "AvantGarde LT Medium";
+	font-size: 22px;
+	font-weight: normal;
+}
+h4 {
+	width: 100%;
+	height: 30px;
+	margin: 0px 0px 0px 0px;
+	float: left;
+	text-align: left;
+	color: #d5515f;
+	font-family: "AvantGarde LT Medium";
+	font-size: 16px;
+	font-weight: normal;
+}
+p {
+	text-align: center;
+	font-size: 16px;
+	line-height: 30px;
+	width: 100%;
+}
+#all_block {
+	width: 1100px;
+	height: auto;
+	margin-top: 20px;
+}
+.block_and_text {
+	width: 240px;
+	height: 220px;
+	float: left;
+	display: block;
+	margin: 17.5px;
+}
+.block1, .block2, .block3, .block4 {
+	width: 240px;
+	height: 175px;
+	background: #f3f3f3 url('images/scal.png') no-repeat scroll center center;
+}
+.block1:hover, .block2:hover, .block3:hover, .block4:hover {
+	background-image: url('images/scal hover.png');
+	background-color: #1a3a54;
+}
+.text1, .text2, .text3, .text4 {
+	height: 45px;
+	width: 100%;
+	background-color: #f0f0f0;
+	text-align: center;
+	line-height: 45px;
+	font-family: "AvantGarde LT Medium";
+	font-size: 16px;
+	color: #1a3a54;
+}
+.block_and_text:hover {
+	color: #fff;
+	background-color: #1a3a54;
+}
+#top_slide {
+	width: 100%;
+	height: 450px;
+	background-color: #d5515f;
+}
+#nav {
+	width: 100%;
+	height: 90px;
+	background-color: #fff;
+	border-bottom:2px #989999 solid;
+}
+#logo {
+	width: 257px;
+	height: 71px;
+	float: left;
+	margin: 8px 0px 0px 50px;
+}
+#nav_en {
+	height: 100%;
+	float: right;
+
+}
+#nav_en ul {
+	list-style-type: none;
+	margin: 0;
+	float: left;
+	height: 100%;
+	width: 100%;
+}
+#nav_en ul li {
+	float: right;
+}
+#nav_en ul li a {
+	font-size: 16px;
+	font-family: "AvantGarde CE", Courier, monospace;
+	font-weight: bold;
+	color: #404040;
+	text-align: center;
+	line-height: 90px;
+	margin: 0px 15px;
+	width: 100%;
+	height: 100%;
+}
+#nav_en ul li a:hover {
+	color: #e4003b;
+}
+#product_blocks {
+	width: 100%;
+	height: 415px;
+	background-color: #fff;
+}
+#who_we_are_message {
+	width: 100%;
+	height: 383px;
+	background: #d5515f url('images/alsafty_who_we_are.jpg') no-repeat scroll center center;
+	position: relative;
+	visibility: inherit;
+	background-size: cover;
+}
+#our_product_block {
+	width: 100%;
+	height: 470px;
+	background-color: #fff;
+}
+#left {
+	width: 37%;
+	height: 100%;
+	float: left;
+	background: #fff url('images/our_product_scale.jpg') no-repeat scroll center center;
+	margin: 0px 0px 0px 78px;
+}
+#right {
+	width: 56%;
+	height: 100%;
+	float: right;
+}
+#last_news {
+	width: 100%;
+	background-color: #f3f3f3;
+	display: table;
+	padding-bottom: 20px;
+}
+#call_us {
+	width: 100%;
+	height: 108px;
+	background: #202020 url('images/call_us.jpg') no-repeat scroll center center;
+	background-size: cover;
+}
+#text {
+	width: 100%;
+	line-height: 35px;
+	padding-top: 17px;
+	text-align: center;
+	color: #fff;
+	font-size: 12px;
+	font-family: "DIN Next LT W23";
+}
+#footer {
+	width: 100%;
+	height: 100px;
+	background-color: #14232f;
+}
