@@ -1,0 +1,614 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Elgamil | Products</title>
+<link href="engine1/style.css" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script src="engine1/jquery.js" type="text/javascript"></script>
+
+<style type="text/css">
+* {
+	margin: 0px auto;
+	padding: 0px;
+}
+body {
+	background-color: #fff;
+	line-height: 30px;
+	color: #5c5c5c;
+	font: "JF Flat Regular",Tahoma,Verdana;
+}
+img {
+	border: 0px;
+}
+a {
+	text-decoration: none;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #5c5c5c;
+	font-weight: normal;
+}
+#container {
+	width: 100%;
+}
+.center {
+	width: 100%;
+	background-color: #fff;
+}
+#center_product {
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+}
+#news_right {
+	width: 345px;
+	float: right;
+	margin: 10px 200px 0px 30px;
+}
+#news_left {
+	width: 345px;
+	float: left;
+	margin: 10px 30px 0px 200px;
+}
+.goto {
+	width: 155px;
+	display: table;
+	height: 33px;
+	float: left;
+	background-color: #1a3a54;
+	color: #fff;
+	margin: 20px 300px 0px 78px;
+	padding-top: 10px;
+	text-align: center;
+	font: normal normal normal 16px "AvantGarde LT Medium";
+}
+.goto:hover {
+	background-color: #d5515f;
+	border: #fff 1px solid;
+}
+.goto2 {
+	width: 155px;
+	height: 33px;
+	float: right;
+	background-color: #d5515f;
+	color: #fff;
+	margin: 35px 130px 0px 20px;
+	padding-top: 10px;
+	text-align: center;
+	font: normal normal normal 16px "AvantGarde LT Medium";
+}
+.goto2:hover {
+	background-color: #14232f;
+	border: #fff 1px solid;
+}
+h5 {
+	text-align: left;
+	width: 590px;
+	height: 150px;
+	float: left;
+	color: #fff;
+	font-family: "AvantGarde LT Medium";
+	margin: 15px 0px 0px 78px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+}
+h6 {
+	text-align: left;
+	width: 590px;
+	float: right;
+	color: #242424;
+	font-family: "AvantGarde LT Medium";
+	margin: 15px 0px 20px 78px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+}
+span3 {
+	text-align: left;
+	float: left;
+	color: #242424;
+	font-family: "AvantGarde LT Medium";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	width: 345px;
+	margin: 10px 0px;
+}
+h1 {
+	width: 100%;
+	margin: 50px 0px 20px 0px;
+	float: left;
+	text-align: center;
+	color: #d5515f;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+}
+h2 {
+	width: 53%;
+	height: 30px;
+	margin: 41px 0px 0px 78px;
+	float: left;
+	text-align: left;
+	color: #fff;
+	font-family: "AvantGarde LT Medium";
+	font-size: 22px;
+	font-weight: normal;
+}
+h3 {
+	width: 100%;
+	height: 30px;
+	margin: 30px 0px 0px 78px;
+	float: left;
+	text-align: left;
+	color: #d5515f;
+	font-family: "AvantGarde LT Medium";
+	font-size: 22px;
+	font-weight: normal;
+}
+h4 {
+	width: 100%;
+	height: 30px;
+	margin: 0px 0px 0px 0px;
+	float: left;
+	text-align: left;
+	color: #d5515f;
+	font-family: "AvantGarde LT Medium";
+	font-size: 16px;
+	font-weight: normal;
+}
+p {
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	line-height: 30px;
+	width: 100%;
+}
+#all_block {
+	width: 1100px;
+	height: auto;
+	margin-top: 20px;
+}
+.block_and_text {
+	width: 240px;
+	height: 220px;
+	float: left;
+	display: block;
+	margin: 17.5px;
+}
+.block1, .block2, .block3, .block4 {
+	width: 240px;
+	height: 175px;
+	background: #f3f3f3 url('images/scal.png') no-repeat scroll center center;
+}
+.block1:hover, .block2:hover, .block3:hover, .block4:hover {
+	background-image: url('images/scal hover.png');
+	background-color: #1a3a54;
+}
+.text1, .text2, .text3, .text4 {
+	height: 45px;
+	width: 100%;
+	background-color: #f0f0f0;
+	text-align: center;
+	line-height: 45px;
+	font-family: "AvantGarde LT Medium";
+	font-size: 16px;
+	color: #1a3a54;
+}
+.block_and_text:hover {
+	color: #fff;
+	background-color: #1a3a54;
+}
+#top_slide {
+	width: 100%;
+	height: 450px;
+	background-color: #d5515f;
+}
+#sub_slide {
+	width: 100%;
+	height: 280px;
+	border-bottom: 1px #989999 solid;
+	background: transparent url('images/bg_about_us.jpg') no-repeat scroll center center / cover;
+}
+#nav {
+	width: 100%;
+	height: 90px;
+	background-color: #fff;
+	border-bottom: 2px #989999 solid;
+}
+#logo {
+	width: 265px;
+	height: 70px;
+	float: left;
+	margin: 8px 0px 0px 50px;
+}
+#nav_en {
+	height: 100%;
+	margin: 0px 50px 0px 0px;
+	float: right;
+}
+#nav_en ul {
+	list-style-type: none;
+	margin: 0;
+	float: left;
+	height: 100%;
+	width: 100%;
+}
+#nav_en ul li {
+	float: right;
+}
+#nav_en ul li a {
+	font-size: 16px;
+	font-family: "AvantGarde CE", Courier, monospace;
+	font-weight: bold;
+	color: #404040;
+	text-align: center;
+	line-height: 90px;
+	margin: 0px 15px;
+	width: 100%;
+	height: 100%;
+}
+#nav_en ul li a:hover {
+	color: #e4003b;
+}
+#product_blocks {
+	width: 100%;
+	background-color: #fff;
+}
+#who_we_are_message {
+	width: 100%;
+	height: 383px;
+	background: #d5515f url('images/alsafty_who_we_are.jpg') no-repeat scroll center center;
+	position: relative;
+	visibility: inherit;
+	background-size: cover;
+	margin-top: 30px;
+}
+#our_product_block {
+	width: 100%;
+	height: 470px;
+	background-color: #fff;
+}
+#left {
+	width: 37%;
+	height: 100%;
+	float: left;
+	background: #fff url('images/our_product_scale.jpg') no-repeat scroll center center;
+	margin: 0px 0px 0px 78px;
+}
+#right {
+	width: 56%;
+	height: 100%;
+	float: right;
+}
+#last_news {
+	width: 100%;
+	background-color: #f3f3f3;
+	display: table;
+	padding-bottom: 20px;
+}
+#call_us {
+	width: 100%;
+	height: 108px;
+	background: #202020 url('images/call_us.jpg') no-repeat scroll center center;
+	background-size: cover;
+}
+#text {
+	width: 100%;
+	line-height: 35px;
+	padding-top: 17px;
+	text-align: center;
+	color: #fff;
+	font-size: 12px;
+	font-family: "DIN Next LT W23";
+}
+#footer {
+	width: 100%;
+	height: 100px;
+	background-color: #14232f;
+}
+#photo {
+	padding-top: 35px;
+	margin: 0px 0px 20px 180px;
+}
+</style>
+</head>
+
+<body>
+
+<div id="container">
+	<div id="nav">
+		<div class="center">
+			<div id="logo">
+				<a href="index.html">
+				<img alt="Elgamil" height="71" src="images/logo_elgamil.png" width="257" /></a></div>
+			<div id="nav_en">
+				<ul>
+					<li><a href="#">العربية</a></li>
+					<li><a href="contact_us.html">Contact Us</a></li>
+					<li><a href="about_us.html">About Us</a></li>
+					<div class="dropdown">
+						<button class="dropbtn">Products
+						<i class="fa fa-caret-down"></i></button>
+						<div class="dropdown-content">
+							<a href="Products.html">Products</a><a href="Products2.html">Products2</a> <a href="Products3.html">Products3</a>
+							<a href="Products4.html">Products4</a> <a href="Products5.html">Products5</a><a href="Products6.html">Products6</a><a href="Products7.html">Products7</a></div>
+					</div>
+					</li>
+					<li><a href="index.html">Home</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="sub_slide">
+	</div>
+	<div id="product_blocks">
+		<div id="center_product">
+			<h1>(TSD-850) Automatic blade bending machine
+</h1>
+			<p style="line-height: 40px;"><span>Automatic blade bending machine (TSD-850)  is numerical control program, it’s developed and designed for the convenience of the user, it’s easy to operate and support DXF file of auto CAD, support file(DXF,AI,NC.)</span></p>
+			<p style="line-height: 40px;"><span>Bending Blade thickness: 0.71mm/1.07mm/1.42mm 2PT/3PT/4PT<br>
+
+Bending Blade height: 23.8-50mm-60mm</span></p>
+			<p><span>Features:<br>Processing of functions such as fully automatic bending, bridge, cutting.
+
+</span></p><p></p>
+			<p style="line-height: 40px;"><span>1.  Panasonic Servo motor system + Ball-screw guide rail design, avoiding skidding and error in length.</span></p>
+			<p style="line-height: 40px; background-color: #f3f3f3;"><span>2. Unique imported mould tool design, easy to bend pattern, high precision of size, durable.</span></p>
+			<p style="line-height: 40px;"><span>3. In order guarantee precision and long-life span, transmission and control parts are imported.</span></p>
+			<p style="line-height: 40px; background-color: #f3f3f3;"><span>4. Self-developed latest bending control system, easy to operate and upgrade available.</span></p>
+			<p style="line-height: 40px;"><span>5. Fully English & Chinese interface, easy to learn how to operate, make bending work easy.</span></p>
+			<p style="line-height: 40px; background-color: #f3f3f3;"><span>6.  It can be installed soon after bending patterns form the machine, no need extra more hard work.</span></p>
+			<p style="line-height: 40px;"><span>7. Exactly to realize fully automatic bending, help to save plate making time.</span></p>
+			<p></p>
+			<table border="0" cellpadding="0" cellspacing="0" style="padding-top: 20px;" width="1000">
+				<tr>
+					<td style="background-color: #d5515f; color: #fff; BORDER-BOTTOM: black 1pt solid; BORDER-LEFT: black 1pt solid; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 170 pt; PADDING-RIGHT: 5.4pt; HEIGHT: 15.3pt; BORDER-TOP: black 1pt solid; BORDER-RIGHT: black 1pt solid; PADDING-TOP: 0cm; mso-border-alt: solid black .5pt" width="200">
+					<p>Technical Parameter:</p>
+					</td>
+					<td style="text-align: right; background-color: #d5515f; color: #fff; BORDER-BOTTOM: black 1pt solid; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 170 pt; PADDING-RIGHT: 5.4pt; HEIGHT: 15.3pt; BORDER-TOP: black 1pt solid; BORDER-RIGHT: black 1pt solid; PADDING-TOP: 0cm; mso-border-alt: solid black .5pt" width="359">
+					<p></p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding: 0cm 5.4pt; background-color: #f3f3f3; line-height: 35px; BORDER-BOTTOM: black 1pt solid; BORDER-LEFT: black 1pt solid; WIDTH: 155.95pt; HEIGHT: 15pt; BORDER-TOP: medium none; BORDER-RIGHT: black 1pt solid; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt" valign="top" width="230">
+					<p style="width: 100%; line-height: 35px; FONT-SIZE: 11pt;">
+					Blade thickness(mm)</p>
+					</td>
+					<td style="background-color: #f3f3f3; padding: 0cm 5.4pt; border-bottom: 1pt solid black; border-left: medium none; WIDTH: 269.3pt; HEIGHT: 15pt; BORDER-TOP: medium none; BORDER-RIGHT: black 1pt solid; mso-border-alt: solid black .5pt; mso-border-left-alt: solid black .5pt; mso-border-top-alt: solid black .5pt" valign="top" width="359">
+					<p style="line-height: 35px; FONT-SIZE: 11pt;">0.71/1.07mm/1.42mm
+
+</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="BORDER-BOTTOM: black 1pt solid; BORDER-LEFT: black 1pt solid; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 155.95pt; PADDING-RIGHT: 5.4pt; HEIGHT: 15.3pt; BORDER-TOP: medium none; BORDER-RIGHT: black 1pt solid; PADDING-TOP: 0cm; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt" valign="top" width="230">
+					<p style="width: 100%; line-height: 35px; FONT-SIZE: 11pt;">
+					Blade height(mm)</p>
+					</td>
+					<td style="BORDER-BOTTOM: black 1pt solid; border-left: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 269.3pt; PADDING-RIGHT: 5.4pt; HEIGHT: 15.3pt; BORDER-TOP: medium none; BORDER-RIGHT: black 1pt solid; PADDING-TOP: 0cm; mso-border-alt: solid black .5pt; mso-border-left-alt: solid black .5pt; mso-border-top-alt: solid black .5pt" valign="top" width="359">
+					<p style="line-height: 35px; FONT-SIZE: 11pt;">23.8-50mm-60mm
+
+</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="background-color: #f3f3f3; background-color: #f3f3f3; BORDER-BOTTOM: black 1pt solid; BORDER-LEFT: black 1pt solid; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 155.95pt; PADDING-RIGHT: 5.4pt; HEIGHT: 15.3pt; BORDER-TOP: medium none; BORDER-RIGHT: black 1pt solid; PADDING-TOP: 0cm; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt" valign="top" width="230">
+					<p style="width: 100%; FONT-SIZE: 11pt;">Max. bending angle
+
+</p>
+					</td>
+					<td style="background-color: #f3f3f3; BORDER-BOTTOM: black 1pt solid; border-left: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 269.3pt; PADDING-RIGHT: 5.4pt; HEIGHT: 15.3pt; BORDER-TOP: medium none; BORDER-RIGHT: black 1pt solid; PADDING-TOP: 0cm; mso-border-alt: solid black .5pt; mso-border-left-alt: solid black .5pt; mso-border-top-alt: solid black .5pt" valign="top" width="359">
+					<p style="line-height: 35px; FONT-SIZE: 11pt;">100°
+
+</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="BORDER-BOTTOM: black 1pt solid; BORDER-LEFT: black 1pt solid; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 155.95pt; PADDING-RIGHT: 5.4pt; HEIGHT: 15.3pt; BORDER-TOP: medium none; BORDER-RIGHT: black 1pt solid; PADDING-TOP: 0cm; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt" valign="top" width="230">
+					<p style="width: 100%; line-height: 35px; FONT-SIZE: 11pt;">
+					Min. ARC radius of 90 degree
+
+</p>
+					</td>
+					<td style="BORDER-BOTTOM: black 1pt solid; border-left: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 269.3pt; PADDING-RIGHT: 5.4pt; HEIGHT: 15.3pt; BORDER-TOP: medium none; BORDER-RIGHT: black 1pt solid; PADDING-TOP: 0cm; mso-border-alt: solid black .5pt; mso-border-left-alt: solid black .5pt; mso-border-top-alt: solid black .5pt" valign="top" width="359">
+					<p style="line-height: 35px; FONT-SIZE: 11pt;">0.4mm</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="background-color: #f3f3f3; BORDER-BOTTOM: black 1pt solid; BORDER-LEFT: black 1pt solid; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 155.95pt; PADDING-RIGHT: 5.4pt; HEIGHT: 15.3pt; BORDER-TOP: medium none; BORDER-RIGHT: black 1pt solid; PADDING-TOP: 0cm; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt" valign="top" width="230">
+					<p style="width: 100%; line-height: 35px; FONT-SIZE: 11pt;">
+					Front Min. bending size
+
+</p>
+					</td>
+					<td style="background-color: #f3f3f3; BORDER-BOTTOM: black 1pt solid; border-left: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 269.3pt; PADDING-RIGHT: 5.4pt; HEIGHT: 15.3pt; BORDER-TOP: medium none; BORDER-RIGHT: black 1pt solid; PADDING-TOP: 0cm; mso-border-alt: solid black .5pt; mso-border-left-alt: solid black .5pt; mso-border-top-alt: solid black .5pt" valign="top" width="359">
+					<p style="line-height: 35px; FONT-SIZE: 11pt;">2.5mm
+
+
+</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="padding: 0cm 5.4pt; border-bottom: 1pt solid black; border-left: 1pt solid black; WIDTH: 155.95pt; HEIGHT: 15pt; BORDER-TOP: medium none; BORDER-RIGHT: black 1pt solid; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt" valign="top" width="230">
+					<p style="width: 100%; line-height: 35px; FONT-SIZE: 11pt;">
+					Back Min. cutting size
+
+</p>
+					</td>
+					<td style="padding: 0cm 5.4pt; border-bottom: 1pt solid black; border-left: medium none; WIDTH: 280.3pt; HEIGHT: 15pt; BORDER-TOP: medium none; BORDER-RIGHT: black 1pt solid; mso-border-alt: solid black .5pt; mso-border-left-alt: solid black .5pt; mso-border-top-alt: solid black .5pt" valign="top" width="359">
+					<p style="line-height: 35px; FONT-SIZE: 11pt;">1.0mm
+
+</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="background-color: #f3f3f3; BORDER-BOTTOM: black 1pt solid; BORDER-LEFT: black 1pt solid; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 155.95pt; PADDING-RIGHT: 5.4pt; HEIGHT: 15.3pt; BORDER-TOP: medium none; BORDER-RIGHT: black 1pt solid; PADDING-TOP: 0cm; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt" valign="top" width="230">
+					<p style="width: 100%; line-height: 35px; FONT-SIZE: 11pt;">
+					Feeding precision</p>
+					</td>
+					<td style="background-color: #f3f3f3; BORDER-BOTTOM: black 1pt solid; border-left: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 269.3pt; PADDING-RIGHT: 5.4pt; HEIGHT: 15.3pt; BORDER-TOP: medium none; BORDER-RIGHT: black 1pt solid; PADDING-TOP: 0cm; mso-border-alt: solid black .5pt; mso-border-left-alt: solid black .5pt; mso-border-top-alt: solid black .5pt" valign="top" width="359">
+					<p style="line-height: 35px; FONT-SIZE: 11pt;">±0.03mm
+
+
+</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="BORDER-BOTTOM: black 1pt solid; BORDER-LEFT: black 1pt solid; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 155.95pt; PADDING-RIGHT: 5.4pt; HEIGHT: 15.3pt; BORDER-TOP: medium none; BORDER-RIGHT: black 1pt solid; PADDING-TOP: 0cm; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt" valign="top" width="230">
+					<p style="width: 100%; line-height: 35px; FONT-SIZE: 11pt;">
+					Bending flatness
+
+</p>
+					</td>
+					<td style="BORDER-BOTTOM: black 1pt solid; border-left: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 269.3pt; PADDING-RIGHT: 5.4pt; HEIGHT: 15.3pt; BORDER-TOP: medium none; BORDER-RIGHT: black 1pt solid; PADDING-TOP: 0cm; mso-border-alt: solid black .5pt; mso-border-left-alt: solid black .5pt; mso-border-top-alt: solid black .5pt" valign="top" width="359">
+					<p style="line-height: 35px; FONT-SIZE: 11pt;">±0.2</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="background-color: #f3f3f3; BORDER-BOTTOM: black 1pt solid; BORDER-LEFT: black 1pt solid; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 155.95pt; PADDING-RIGHT: 5.4pt; HEIGHT: 15.3pt; BORDER-TOP: medium none; BORDER-RIGHT: black 1pt solid; PADDING-TOP: 0cm; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt" valign="top" width="230">
+					<p style="width: 100%; line-height: 35px; FONT-SIZE: 11pt;">
+					Functions
+
+</p>
+					</td>
+					<td style="background-color: #f3f3f3; BORDER-BOTTOM: black 1pt solid; border-left: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 269.3pt; PADDING-RIGHT: 5.4pt; HEIGHT: 15.3pt; BORDER-TOP: medium none; BORDER-RIGHT: black 1pt solid; PADDING-TOP: 0cm; mso-border-alt: solid black .5pt; mso-border-left-alt: solid black .5pt; mso-border-top-alt: solid black .5pt" valign="top" width="359">
+					<p style="line-height: 35px; FONT-SIZE: 11pt;">Bending, cutting, lipping, bridge
+
+</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="BORDER-BOTTOM: black 1pt solid; BORDER-LEFT: black 1pt solid; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 155.95pt; PADDING-RIGHT: 5.4pt; HEIGHT: 15.3pt; BORDER-TOP: medium none; BORDER-RIGHT: black 1pt solid; PADDING-TOP: 0cm; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt" valign="top" width="230">
+					<p style="width: 100%; line-height: 35px; FONT-SIZE: 11pt;">
+					Cutting methods
+
+</p>
+					</td>
+					<td style="BORDER-BOTTOM: black 1pt solid; border-left: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 269.3pt; PADDING-RIGHT: 5.4pt; HEIGHT: 15.3pt; BORDER-TOP: medium none; BORDER-RIGHT: black 1pt solid; PADDING-TOP: 0cm; mso-border-alt: solid black .5pt; mso-border-left-alt: solid black .5pt; mso-border-top-alt: solid black .5pt" valign="top" width="359">
+					<p style="line-height: 35px; FONT-SIZE: 11pt;">Swing cutting or Auto flat cutting
+
+</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="background-color: #f3f3f3; BORDER-BOTTOM: black 1pt solid; BORDER-LEFT: black 1pt solid; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 155.95pt; PADDING-RIGHT: 5.4pt; HEIGHT: 15.3pt; BORDER-TOP: medium none; BORDER-RIGHT: black 1pt solid; PADDING-TOP: 0cm; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt" valign="top" width="230">
+					<p style="width: 100%; line-height: 35px; FONT-SIZE: 11pt;">
+					Optimal pattern format
+
+</p>
+					</td>
+					<td style="background-color: #f3f3f3; BORDER-BOTTOM: black 1pt solid; border-left: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 280.3pt; PADDING-RIGHT: 5.4pt; HEIGHT: 15.3pt; BORDER-TOP: medium none; BORDER-RIGHT: black 1pt solid; PADDING-TOP: 0cm; mso-border-alt: solid black .5pt; mso-border-left-alt: solid black .5pt; mso-border-top-alt: solid black .5pt" valign="top" width="359">
+					<p style="line-height: 35px; FONT-SIZE: 11pt;">Dxf format
+
+</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="BORDER-BOTTOM: black 1pt solid; BORDER-LEFT: black 1pt solid; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 155.95pt; PADDING-RIGHT: 5.4pt; HEIGHT: 15.3pt; BORDER-TOP: medium none; BORDER-RIGHT: black 1pt solid; PADDING-TOP: 0cm; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt" valign="top" width="230">
+					<p style="width: 100%; line-height: 35px; FONT-SIZE: 11pt;">
+					Air supply
+
+</p>
+					</td>
+					<td style="BORDER-BOTTOM: black 1pt solid; border-left: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 269.3pt; PADDING-RIGHT: 5.4pt; HEIGHT: 15.3pt; BORDER-TOP: medium none; BORDER-RIGHT: black 1pt solid; PADDING-TOP: 0cm; mso-border-alt: solid black .5pt; mso-border-left-alt: solid black .5pt; mso-border-top-alt: solid black .5pt" valign="top" width="359">
+					<p style="line-height: 35px; FONT-SIZE: 11pt;">0.6mpa
+
+</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="background-color: #f3f3f3; BORDER-BOTTOM: black 1pt solid; BORDER-LEFT: black 1pt solid; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 155.95pt; PADDING-RIGHT: 5.4pt; HEIGHT: 15.3pt; BORDER-TOP: medium none; BORDER-RIGHT: black 1pt solid; PADDING-TOP: 0cm; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt" valign="top" width="230">
+					<p style="width: 100%; line-height: 35px; FONT-SIZE: 11pt;">
+					Optimal pattern format
+</p>
+					</td>
+					<td style="background-color: #f3f3f3; BORDER-BOTTOM: black 1pt solid; border-left: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 269.3pt; PADDING-RIGHT: 5.4pt; HEIGHT: 15.3pt; BORDER-TOP: medium none; BORDER-RIGHT: black 1pt solid; PADDING-TOP: 0cm; mso-border-alt: solid black .5pt; mso-border-left-alt: solid black .5pt; mso-border-top-alt: solid black .5pt" valign="top" width="359">
+					<p style="line-height: 35px; FONT-SIZE: 11pt;">Auto CAD, Core Draw files are supported
+</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="BORDER-BOTTOM: black 1pt solid; BORDER-LEFT: black 1pt solid; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 155.95pt; PADDING-RIGHT: 5.4pt; HEIGHT: 15.3pt; BORDER-TOP: medium none; BORDER-RIGHT: black 1pt solid; PADDING-TOP: 0cm; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt" valign="top" width="230">
+					<p style="width: 100%; line-height: 35px; FONT-SIZE: 11pt;">
+					Air supply
+</p>
+					</td>
+					<td style="BORDER-BOTTOM: black 1pt solid; border-left: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 269.3pt; PADDING-RIGHT: 5.4pt; HEIGHT: 15.3pt; BORDER-TOP: medium none; BORDER-RIGHT: black 1pt solid; PADDING-TOP: 0cm; mso-border-alt: solid black .5pt; mso-border-left-alt: solid black .5pt; mso-border-top-alt: solid black .5pt" valign="top" width="359">
+					<p style="line-height: 35px; FONT-SIZE: 11pt;">0.6mpa
+</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="background-color: #f3f3f3; BORDER-BOTTOM: black 1pt solid; BORDER-LEFT: black 1pt solid; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 155.95pt; PADDING-RIGHT: 5.4pt; HEIGHT: 15.3pt; BORDER-TOP: medium none; BORDER-RIGHT: black 1pt solid; PADDING-TOP: 0cm; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt" valign="top" width="230">
+					<p style="width: 100%; line-height: 35px; FONT-SIZE: 11pt;">
+					Power supply
+
+</p>
+					</td>
+					<td style="background-color: #f3f3f3; BORDER-BOTTOM: black 1pt solid; border-left: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 269.3pt; PADDING-RIGHT: 5.4pt; HEIGHT: 15.3pt; BORDER-TOP: medium none; BORDER-RIGHT: black 1pt solid; PADDING-TOP: 0cm; mso-border-alt: solid black .5pt; mso-border-left-alt: solid black .5pt; mso-border-top-alt: solid black .5pt" valign="top" width="359">
+					<p style="line-height: 35px; FONT-SIZE: 11pt;">380∨ 50/60HZ(Standard)
+
+</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="BORDER-BOTTOM: black 1pt solid; BORDER-LEFT: black 1pt solid; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 155.95pt; PADDING-RIGHT: 5.4pt; HEIGHT: 15.3pt; BORDER-TOP: medium none; BORDER-RIGHT: black 1pt solid; PADDING-TOP: 0cm; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt" valign="top" width="230">
+					<p style="width: 100%; line-height: 35px; FONT-SIZE: 11pt;">
+					Machine total power
+</p>
+					</td>
+					<td style="BORDER-BOTTOM: black 1pt solid; border-left: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 290.3pt; PADDING-RIGHT: 5.4pt; HEIGHT: 15.3pt; BORDER-TOP: medium none; BORDER-RIGHT: black 1pt solid; PADDING-TOP: 0cm; mso-border-alt: solid black .5pt; mso-border-left-alt: solid black .5pt; mso-border-top-alt: solid black .5pt" valign="top" width="359">
+					<p style="line-height: 35px; FONT-SIZE: 11pt;">1.3kw
+
+</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="background-color: #f3f3f3; BORDER-BOTTOM: black 1pt solid; BORDER-LEFT: black 1pt solid; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 155.95pt; PADDING-RIGHT: 5.4pt; HEIGHT: 15.3pt; BORDER-TOP: medium none; BORDER-RIGHT: black 1pt solid; PADDING-TOP: 0cm; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt" valign="top" width="230">
+					<p style="width: 100%; line-height: 35px; FONT-SIZE: 11pt;">
+					Gross weight.
+</p>
+					</td>
+					<td style="background-color: #f3f3f3; BORDER-BOTTOM: black 1pt solid; border-left: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 269.3pt; PADDING-RIGHT: 5.4pt; HEIGHT: 15.3pt; BORDER-TOP: medium none; BORDER-RIGHT: black 1pt solid; PADDING-TOP: 0cm; mso-border-alt: solid black .5pt; mso-border-left-alt: solid black .5pt; mso-border-top-alt: solid black .5pt" valign="top" width="359">
+					<p style="line-height: 35px; FONT-SIZE: 11pt;">450kgs
+
+</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="BORDER-BOTTOM: black 1pt solid; BORDER-LEFT: black 1pt solid; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 155.95pt; PADDING-RIGHT: 5.4pt; HEIGHT: 15.3pt; BORDER-TOP: medium none; BORDER-RIGHT: black 1pt solid; PADDING-TOP: 0cm; mso-border-alt: solid black .5pt; mso-border-top-alt: solid black .5pt" valign="top" width="230">
+					<p style="width: 100%; line-height: 35px; FONT-SIZE: 11pt;">
+					Overall dimension
+</p>
+					</td>
+					<td style="BORDER-BOTTOM: black 1pt solid; border-left: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 269.3pt; PADDING-RIGHT: 5.4pt; HEIGHT: 15.3pt; BORDER-TOP: medium none; BORDER-RIGHT: black 1pt solid; PADDING-TOP: 0cm; mso-border-alt: solid black .5pt; mso-border-left-alt: solid black .5pt; mso-border-top-alt: solid black .5pt" valign="top" width="359">
+					<p style="line-height: 35px; FONT-SIZE: 11pt;">2700×1050×1350mm(L×W×H)
+
+</p>
+					</td>
+				</tr>
+				</b><b style="mso-bidi-font-weight: normal">
+				<span lang="EN-US" style="FONT-FAMILY: 'Calibri','sans-serif'; COLOR: #1f497d; mso-fareast-font-family: Arial; mso-bidi-font-family: Arial"><o:p></o:p>
+				</span></b>
+				<p></p>
+			</table>
+			<h1>After-sales service:
+
+</h1>
+			<p style="line-height: 40px;"><span>English-speaking engineer is available for end-user's machine installation and training under buy’s cost around 5days.</span></p>
+			<p style="line-height: 40px; background-color: #f3f3f3;"><span>English software, installation and related training instructions and videos are available for end-users.</span></p>
+			<p style="line-height: 40px;"><span>In case of any problems or questions about laser technology you can always refer to TSD Laser.</span></p>
+			<p style="line-height: 40px; background-color: #f3f3f3;"><span>With our customer-orientated service support, maintenance and repair costs will be kept low.</span></p>
+			<p style="line-height:40px;"><span>One year guarantee for machine is promised.</span></p>
+		</div>
+		<div id="photo">
+			<img alt="elgamel" height="523" src="images/Rotary-Die-Board-Laser-Cutting-Machine6.jpg" width="764" /></div>
+	</div>
+	
+</div>
+
+</body>
+
+</html>
